@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101519" />
+  <meta name="description" content="Explorez les 118 éléments dans un musée de la matière." />
+  <title>Atlas Périodique 3D — Explorer la matière</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="importmap">
+  {"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}
+  </script>
+</head>
+<body>
+  <div id="boot" class="boot" role="status">
+    <div class="boot-mark">118</div>
+    <div class="boot-copy"><strong>Un univers de matière</strong><span id="bootText">Ouverture de l’Atlas…</span></div>
+    <div class="boot-track"><i id="bootBar"></i></div>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="#explorer" aria-label="Atlas Périodique 3D, vue d’ensemble">
+      <svg class="brand-mark" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 3 51 15 56 38 38 56 14 51 4 30 13 12Z" stroke="currentColor"/><path d="m30 3 8 53M4 30l47-15M13 12l43 26M14 51l37-36M4 30l34 26M13 12l1 39" stroke="currentColor" opacity=".35"/><path d="m30 25 3 5-3 5-3-5Z" stroke="#c4a45d"/></svg>
+      <span><b>Atlas Périodique <em>3D</em></b><small>Explorer · Comprendre · S’émerveiller</small></span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <button id="exploreNav" class="nav-link active" type="button">Explorer</button>
+      <button id="familiesNav" class="nav-link" type="button" aria-controls="familyLegend" aria-expanded="true">Familles</button>
+      <button id="searchNav" class="nav-link" type="button" aria-controls="searchDialog" aria-haspopup="dialog">Rechercher</button>
+      <button id="aboutNav" class="nav-link" type="button" aria-controls="aboutDialog" aria-haspopup="dialog">À propos</button>
+    </nav>
+    <span class="language-label" lang="fr" aria-label="Langue : français">FR</span>
+  </header>
+  <main id="explorer" aria-label="Explorer le tableau périodique">
+    <div id="stage" class="stage" aria-label="Scène 3D interactive">
+      <canvas id="canvas" aria-label="Tableau périodique. Sélectionnez un élément, ou utilisez Rechercher pour ouvrir sa fiche."></canvas>
+      <div class="stage-vignette"></div><div id="hoverLabel" class="hover-label"></div>
+    </div>
+    <div class="collection-counter" aria-label="118 éléments"><strong>118</strong><span>Éléments</span><p>Une matière infinie<br>de découvertes</p></div>
+    <p class="gallery-quote"><span>La matière<br>relie nos mondes</span>Comprendre les éléments,<br>c’est comprendre l’Univers.</p>
+    <aside id="familyLegend" class="family-legend" aria-label="Familles chimiques"><div id="familyFilters" class="family-filters"></div></aside>
+    <aside id="elementPanel" class="element-panel" aria-label="Fiche de l’élément" aria-hidden="true">
+      <button id="closePanel" class="panel-close" type="button" aria-label="Fermer la fiche">×</button>
+      <div id="elementAccent" class="element-accent"></div>
+      <div class="panel-hero">
+        <div class="element-identity"><span id="elementNumber">26</span><strong id="elementSymbol">Fe</strong><h1 id="elementName">Fer</h1></div>
+        <figure id="specimenFigure" data-state="empty">
+          <button id="specimenPreview" class="specimen-preview" type="button" aria-label="Agrandir le visuel de l’élément" aria-haspopup="dialog" aria-controls="specimenDialog" disabled>
+            <img id="elementSpecimen" alt="" decoding="async" />
+            <span id="specimenStatus" class="specimen-status">Visuel de l’élément</span>
+            <span class="specimen-enlarge" aria-hidden="true">⤢</span>
+          </button>
+          <figcaption id="specimenCaption">Visuel de l’élément</figcaption>
+        </figure>
+      </div>
+      <p id="elementCategory" class="panel-kicker">Métaux de transition</p>
+      <div id="panelTabs" class="panel-tabs" role="tablist" aria-label="Informations sur l’élément">
+        <button type="button" role="tab" id="propertiesTabButton" aria-selected="true" aria-controls="propertiesTab" tabindex="0">Propriétés</button>
+        <button type="button" role="tab" id="applicationsTabButton" aria-selected="false" aria-controls="applicationsTab" tabindex="-1">Applications</button>
+        <button type="button" role="tab" id="historyTabButton" aria-selected="false" aria-controls="historyTab" tabindex="-1">Histoire</button>
+      </div>
+      <div class="panel-content">
+        <section id="propertiesTab" role="tabpanel" aria-labelledby="propertiesTabButton"><dl id="elementProperties" class="properties"></dl><p id="elementSummary" class="element-summary"></p><div class="shells-block" hidden><span>Couches électroniques</span><div id="shells" class="shells"></div></div></section>
+        <section id="applicationsTab" role="tabpanel" aria-labelledby="applicationsTabButton" hidden><h2>Dans notre quotidien</h2><p id="elementApplications">Sélectionnez un élément pour découvrir ses applications.</p></section>
+        <section id="historyTab" role="tabpanel" aria-labelledby="historyTabButton" hidden><h2>Une histoire de matière</h2><p id="elementHistory">Sélectionnez un élément pour découvrir son histoire.</p></section>
+      </div>
+      <a id="elementSource" class="source-link" href="https://fr.wikipedia.org/wiki/Fer" target="_blank" rel="noreferrer">En savoir plus <span aria-hidden="true">→</span></a>
+    </aside>
+    <div class="stage-controls" role="group" aria-label="Contrôles de la scène">
+      <button id="deployBtn" class="deploy-button" type="button"><span aria-hidden="true">▶</span> Déployer le tableau</button>
+      <button id="foldBtn" type="button"><span aria-hidden="true">⊡</span> Replier</button>
+      <div class="timeline-control"><button id="playPause" class="play-button" type="button" aria-label="Lire ou mettre en pause l’animation" title="Lire ou mettre en pause">▶</button><span id="timecode">00:00</span><input id="timeline" aria-label="Progression de l’animation" type="range" min="0" max="10" step="0.01" value="0" /><span class="timeline-end">0:10</span></div>
+      <button id="resetCamera" class="reset-button" type="button" title="Retrouver le cadrage initial"><span aria-hidden="true">↺</span> Vue initiale</button>
+      <div class="tour-controls" role="group" aria-label="Visite des éléments">
+        <button id="tourToggle" type="button" disabled aria-controls="tourOptions" aria-expanded="false">Visiter les 118</button>
+        <div id="tourOptions" class="tour-options" hidden>
+          <button id="tourPrevious" type="button" aria-label="Élément précédent" title="Élément précédent">‹</button>
+          <span id="tourProgress" class="tour-progress" aria-label="Progression de la visite">1 / 118</span>
+          <button id="tourNext" type="button" aria-label="Élément suivant" title="Élément suivant">›</button>
+          <select id="tourSpeed" aria-label="Durée par élément" title="Durée par élément">
+            <option value="1.5">Rapide · 1,5 s</option>
+            <option value="3" selected>Normal · 3 s</option>
+            <option value="6">Lent · 6 s</option>
+          </select>
+        </div>
+      </div>
+      <button id="demoBtn" class="visually-hidden" type="button" tabindex="-1" aria-hidden="true">Lire la séquence complète</button>
+    </div>
+  </main>
+  <footer><div class="footer-motto"><svg viewBox="0 0 60 66" fill="none" aria-hidden="true"><path d="m30 3 24 14 4 29-28 17L3 48 5 19Z M30 3v60M5 19l49-2L3 48l55-2Z M30 3 3 48m51-31L30 63M5 19l25 44M30 3l28 43" stroke="currentColor" stroke-width=".6"/><circle cx="30" cy="34" r="6" fill="currentColor" opacity=".6"/></svg><span>Science<br>Technologie<br>Humanité<br>Un même univers</span></div><div class="footer-title"><span>Atlas Périodique <em>3D</em></span><small>Une exploration interactive des 118 éléments</small></div></footer>
+  <dialog id="searchDialog" class="museum-dialog search-dialog" aria-labelledby="searchTitle"><button class="dialog-close" data-close-dialog type="button" aria-label="Fermer la recherche">×</button><p class="dialog-eyebrow">Les 118 éléments</p><h2 id="searchTitle">Explorer la matière</h2><label for="searchInput">Un nom, un symbole, un numéro</label><div class="search-wrap"><input id="searchInput" type="search" autocomplete="off" spellcheck="false" placeholder="Fer, Fe, 26…" /><div id="searchResults" class="search-results" aria-label="Résultats de la recherche"></div></div><p class="search-hint">Commencez à écrire pour retrouver un élément.</p></dialog>
+  <dialog id="aboutDialog" class="museum-dialog" aria-labelledby="aboutTitle"><button class="dialog-close" data-close-dialog type="button" aria-label="Fermer la présentation">×</button><p class="dialog-eyebrow">Science · Technologie · Humanité</p><h2 id="aboutTitle">Un même univers.</h2><p>De l’hydrogène des étoiles au fer qui nous entoure, la matière raconte une histoire commune.</p><p>Cet atlas invite à explorer les 118 éléments, leurs familles et leurs propriétés. Sélectionnez une case pour ouvrir sa fiche, recherchez un élément ou déployez le tableau pour le découvrir autrement.</p><button id="aboutExplore" class="dialog-action" type="button">Explorer le tableau <span aria-hidden="true">→</span></button></dialog>
+  <dialog id="specimenDialog" class="museum-dialog specimen-dialog" aria-labelledby="specimenDialogTitle" aria-describedby="specimenDescription">
+    <button id="closeSpecimen" class="dialog-close" type="button" aria-label="Fermer l’aperçu">×</button>
+    <p id="specimenKind" class="dialog-eyebrow"></p>
+    <h2 id="specimenDialogTitle"></h2>
+    <div class="specimen-large-frame"><img id="specimenLarge" alt="" decoding="async" /></div>
+    <p id="specimenFullCaption" class="specimen-full-caption"></p>
+    <p id="specimenDescription"></p>
+    <dl class="specimen-attribution"><div><dt>Crédit</dt><dd id="specimenCredit"></dd></div><div><dt>Licence</dt><dd id="specimenLicense"></dd></div></dl>
+    <a id="specimenSource" class="specimen-source" target="_blank" rel="noreferrer">Consulter la source <span aria-hidden="true">↗</span></a>
+  </dialog>
+  <noscript>JavaScript est requis pour explorer le tableau périodique.</noscript>
+  <script type="module" src="./museum-ui.mjs"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
+
+

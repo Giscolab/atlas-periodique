@@ -1,0 +1,58 @@
+[
+  {
+    "id": "concrete_wall_006",
+    "kind": "Diffuse",
+    "name": "concrete_wall_006_diff_1k.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_006/concrete_wall_006_diff_1k.jpg",
+    "size": 769415
+  },
+  {
+    "id": "concrete_wall_006",
+    "kind": "nor_gl",
+    "name": "concrete_wall_006_nor_gl_1k.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_006/concrete_wall_006_nor_gl_1k.jpg",
+    "size": 1195078
+  },
+  {
+    "id": "concrete_wall_006",
+    "kind": "Rough",
+    "name": "concrete_wall_006_rough_1k.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_006/concrete_wall_006_rough_1k.jpg",
+    "size": 255004
+  },
+  {
+    "id": "smooth_concrete_floor",
+    "kind": "Diffuse",
+    "name": "smooth_concrete_floor_diff_1k.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/smooth_concrete_floor/smooth_concrete_floor_diff_1k.jpg",
+    "size": 861674
+  },
+  {
+    "id": "smooth_concrete_floor",
+    "kind": "nor_gl",
+    "name": "smooth_concrete_floor_nor_gl_1k.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/smooth_concrete_floor/smooth_concrete_floor_nor_gl_1k.jpg",
+    "size": 529251
+  },
+  {
+    "id": "smooth_concrete_floor",
+    "kind": "Rough",
+    "name": "smooth_concrete_floor_rough_1k.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/smooth_concrete_floor/smooth_concrete_floor_rough_1k.jpg",
+    "size": 488628
+  },
+  {
+    "id": "lebombo",
+    "kind": "hdri",
+    "name": "lebombo_1k.hdr",
+    "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/lebombo_1k.hdr",
+    "size": 1476953
+  },
+  {
+    "id": "rainforest_trail",
+    "kind": "HDRI panorama 1K",
+    "name": "rainforest_trail_1k.hdr",
+    "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/rainforest_trail_1k.hdr",
+    "size": 1956135
+  }
+]

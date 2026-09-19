@@ -1,0 +1,321 @@
+{
+  "checks": [
+    "118 original roots, 21 clips, 118 material presentations",
+    "H left of He and above Li; front-facing non-mirrored orientation",
+    "All eight assembled corners fit the calibrated frame",
+    "Desktop opens the Fe record with nine properties",
+    "Record tabs respond to clicks and keyboard arrows",
+    "A real Fe click selects without zooming",
+    "A real Au click selects without zooming and hides the Fe specimen",
+    "Double-click focuses Fe while remaining frontal",
+    "Accented and accent-free search both select Étain",
+    "Searching a filtered-out element reveals it and restores raycast selection",
+    "Deployed pose hides and disables both the record and family legend",
+    "Timeline 6.83 / 10 / 0 preserves camera and restores original positions",
+    "Fold and reset restore visible, interactive record and family legend",
+    "Reduced-motion deploy/fold/reset use the correct animation poses",
+    "After deployment and reset, closing/reopening the record re-enables its tabs",
+    "1920px desktop and 390px portrait resize preserve the full table frame",
+    "Orbit drag stays on the front hemisphere and does not select an element",
+    "Fresh mobile load starts with closed panel/legend; search opens Fe",
+    "Latest animated deploy/fold action wins",
+    "Manual timeline scrubbing cancels an active tween",
+    "No browser errors or failed requests"
+  ],
+  "errors": [],
+  "warnings": [],
+  "failedRequests": [],
+  "responsive": [
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "camera": {
+        "position": [
+          1.226212738253546,
+          -0.5441319026000098,
+          31.00994168926977
+        ],
+        "target": [
+          1.226212738253546,
+          -0.5441319026000117,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov": 28,
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 180
+      },
+      "corners": [
+        [
+          0.16789618998925904,
+          0.8114872988155241,
+          0.997358089180121
+        ],
+        [
+          0.7436689302208446,
+          0.8114872988155241,
+          0.997358089180121
+        ],
+        [
+          0.16789618998925893,
+          0.11874740712800186,
+          0.9973580891801211
+        ],
+        [
+          0.7436689302208446,
+          0.11874740712800186,
+          0.9973580891801211
+        ],
+        [
+          0.16201861785782062,
+          0.817,
+          0.9973014976988501
+        ],
+        [
+          0.7479813821421795,
+          0.817,
+          0.9973014976988501
+        ],
+        [
+          0.16201861785782057,
+          0.11199999999999993,
+          0.9973014976988502
+        ],
+        [
+          0.7479813821421795,
+          0.11199999999999993,
+          0.9973014976988502
+        ]
+      ]
+    },
+    {
+      "name": "mobile-resize",
+      "width": 390,
+      "height": 844,
+      "camera": {
+        "position": [
+          4.817100862774211e-16,
+          -3.7558941212519033,
+          75.59234264471424
+        ],
+        "target": [
+          4.817100862774211e-16,
+          -3.7558941212519077,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov": 28,
+        "aspect": 0.46208530805687204,
+        "near": 0.05,
+        "far": 180
+      },
+      "corners": [
+        [
+          0.043298519263532564,
+          0.5435394292925826,
+          0.9992372013551195
+        ],
+        [
+          0.9567014807364673,
+          0.5435394292925826,
+          0.9992372013551195
+        ],
+        [
+          0.043298519263532564,
+          0.2578947095176489,
+          0.9992372013551195
+        ],
+        [
+          0.9567014807364673,
+          0.2578947095176489,
+          0.9992372013551195
+        ],
+        [
+          0.03999999999999998,
+          0.5438538921360426,
+          0.9992276784477457
+        ],
+        [
+          0.96,
+          0.5438538921360426,
+          0.9992276784477457
+        ],
+        [
+          0.03999999999999998,
+          0.2561461078639574,
+          0.9992276784477457
+        ],
+        [
+          0.96,
+          0.2561461078639574,
+          0.9992276784477457
+        ]
+      ]
+    }
+  ],
+  "initial": {
+    "count": 118,
+    "clips": 21,
+    "time": 0,
+    "bounds": {
+      "min": [
+        -7.983500063419342,
+        -5.4029998779296875,
+        -0.2719999952316295
+      ],
+      "max": [
+        7.983500063419342,
+        5.4029998779296875,
+        0.2719999952316295
+      ]
+    },
+    "camera": {
+      "position": [
+        1.0597566455866374,
+        -0.5573534950863044,
+        31.756827760467125
+      ],
+      "target": [
+        1.0597566455866374,
+        -0.5573534950863064,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov": 28,
+      "aspect": 1.5,
+      "near": 0.05,
+      "far": 180
+    },
+    "projection": [
+      {
+        "z": 1,
+        "screen": [
+          0.13704452683794982,
+          0.15831649175768508,
+          0.9974070956162709
+        ]
+      },
+      {
+        "z": 2,
+        "screen": [
+          0.7737600354263202,
+          0.15831649175768508,
+          0.9974070956162709
+        ]
+      },
+      {
+        "z": 3,
+        "screen": [
+          0.13704452683794982,
+          0.23135151403431736,
+          0.9974070956162709
+        ]
+      },
+      {
+        "z": 26,
+        "screen": [
+          0.3992214997821771,
+          0.37742153168562315,
+          0.9974070956162709
+        ]
+      },
+      {
+        "z": 79,
+        "screen": [
+          0.511583062482093,
+          0.5234915640107246,
+          0.9974070956162709
+        ]
+      },
+      {
+        "z": 92,
+        "screen": [
+          0.32431379466002136,
+          0.7713182184730167,
+          0.9974070956162709
+        ]
+      },
+      {
+        "z": 118,
+        "screen": [
+          0.7737600354263202,
+          0.596526566722296,
+          0.9974070956162709
+        ]
+      }
+    ],
+    "corners": [
+      [
+        0.12252212431660797,
+        0.803395838761336,
+        0.9974326550808581
+      ],
+      [
+        0.7890064985700971,
+        0.803395838761336,
+        0.9974326550808581
+      ],
+      [
+        0.12252212431660797,
+        0.12681007484928686,
+        0.9974326550808581
+      ],
+      [
+        0.7890064985700971,
+        0.12681007484928686,
+        0.9974326550808581
+      ],
+      [
+        0.11599999999999999,
+        0.8086379615584949,
+        0.997378694429872
+      ],
+      [
+        0.794,
+        0.8086379615584949,
+        0.997378694429872
+      ],
+      [
+        0.11599999999999999,
+        0.12036203844150523,
+        0.9973786944298719
+      ],
+      [
+        0.794,
+        0.12036203844150523,
+        0.9973786944298719
+      ]
+    ],
+    "frame": {
+      "left": 0.116,
+      "right": 0.794,
+      "top": 0.112,
+      "bottom": 0.817
+    },
+    "materialEdits": 118,
+    "presentation": {
+      "tileWidth": 0.837,
+      "tileHeight": 1.095,
+      "rowSpacingScale": 1.3
+    },
+    "lights": 2,
+    "calls": 1233,
+    "triangles": 460574
+  },
+  "passed": 21,
+  "finishedAt": "2026-09-19T10:45:12.171Z"
+}

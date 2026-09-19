@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas V4 — comparaison avec la cible</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#10151a;color:#e1e5e8;font:15px/1.5 system-ui,sans-serif}main{max-width:1568px;margin:auto;padding:24px}h1{font-size:25px;margin:0 0 8px}p{max-width:1050px;color:#b8c0c8}a{color:#e4c58e}nav{display:flex;gap:20px;flex-wrap:wrap;margin:18px 0}button,select,input{font:inherit}button,select{background:#25303a;color:#fff;border:1px solid #55606a;padding:8px 12px;border-radius:5px}button[aria-pressed=true]{border-color:#e4c58e}label{display:flex;gap:12px;align-items:center}input{accent-color:#e4c58e;flex:1}figure{margin:0}figcaption{padding:8px 0;color:#c4ccd3}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}img{width:100%;display:block}.swipe{position:relative;aspect-ratio:3/2;overflow:hidden}.swipe img{position:absolute;inset:0}.swipe .actual{clip-path:inset(0 50% 0 0)}.divider{position:absolute;top:0;bottom:0;width:2px;left:50%;background:#e4c58e}.pill{display:inline-block;color:#e4c58e;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}#slider{margin:18px 0}.note{padding:16px;background:#1b2229;border-left:3px solid #e4c58e}footer{margin-top:25px;font-size:13px;color:#9eabb5}[hidden]{display:none!important}@media(max-width:750px){.pair{grid-template-columns:1fr}main{padding:16px}}
+</style><main>
+<span class="pill">V4 · Galerie et modules métalliques</span>
+<h1>Atlas Périodique 3D</h1>
+<p>La cible et les captures réelles sont comparées à la même résolution : 1536 × 1024. Le sélecteur permet de suivre les corrections, jusqu’au rendu hybride actuel.</p>
+<nav><a href="./">Ouvrir la V4 interactive</a><a href="./?gallery=3d">Voir la galerie entièrement 3D</a><a href="docs/VALIDATION.md">Vérifications et limites</a></nav>
+<nav aria-label="Mode de comparaison"><button id="side" aria-pressed="true">Côte à côte</button><button id="wipe" aria-pressed="false">Comparaison glissée</button><label>Passe réelle <select id="pass"><option value="museum-final.png">V4 · rendu actuel</option><option value="museum-pass-07.png">7 · décor préparé à partir de la cible</option><option value="museum-pass-06.png">6 · galerie entièrement 3D</option><option value="museum-pass-03.png">3 · matières et textes corrigés</option><option value="museum-pass-01.png">1 · première intégration</option><option value="base-final.png">V3 · ancienne base</option></select></label></nav>
+<div class="pair" id="pair"><figure><figcaption>Image cible validée</figcaption><img src="docs/visual_target.png" alt="Cible Dream Loop : tableau dans une galerie sombre"></figure><figure><figcaption>Capture réelle du navigateur</figcaption><img class="real" src="docs/museum-final.png" alt="Rendu réel V4"></figure></div>
+<div id="overlay" hidden><p>À gauche : capture réelle. À droite : cible.</p><div class="swipe"><img src="docs/visual_target.png" alt="Cible"><img class="real actual" src="docs/museum-final.png" alt="Capture réelle"><span class="divider" aria-hidden="true"></span></div><label id="slider">Révéler la capture réelle <input type="range" min="0" max="100" value="50" aria-label="Part de la capture réelle affichée"></label></div>
+<p class="note">Le rendu actuel combine un décor fixe dérivé de la cible avec 118 éléments, leurs animations et leurs reflets calculés en 3D. Le décor ne change pas de perspective avec la caméra. La galerie entièrement modélisée reste disponible pour comparaison.</p>
+<p>Les nouvelles coques métalliques suivent les racines animées du GLB original, conservé à l’identique. Les proportions des coques et l’espacement des rangées ont été adaptés ; les inscriptions françaises ont été reconstruites. Les erreurs chimiques de l’image cible ne sont pas reprises.</p>
+<footer>21 contrôles navigateur et 11 tests de caméra réussis · 118 éléments · 21 animations · Aucune dépendance réseau pendant l’exploration.</footer></main>
+<script>
+const side=document.querySelector('#side'),wipe=document.querySelector('#wipe');
+function mode(overlay){document.querySelector('#pair').hidden=overlay;document.querySelector('#overlay').hidden=!overlay;side.setAttribute('aria-pressed',String(!overlay));wipe.setAttribute('aria-pressed',String(overlay));}
+side.onclick=()=>mode(false);wipe.onclick=()=>mode(true);
+document.querySelector('#pass').onchange=e=>document.querySelectorAll('.real').forEach(img=>img.src='docs/'+e.target.value);
+document.querySelector('#slider input').oninput=e=>{document.querySelector('.actual').style.clipPath='inset(0 '+(100-e.target.value)+'% 0 0)';document.querySelector('.divider').style.left=e.target.value+'%';};
+</script></html>

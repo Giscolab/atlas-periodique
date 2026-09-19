@@ -1,0 +1,1004 @@
+{
+  "checks": [
+    "All 118 paused tour steps decode the manifest image with matching symbol, alt and caption",
+    "Enlarged image preserves identity/source and closes by Escape or button with focus restoration",
+    "Opening the specimen pauses the guided visit",
+    "Delayed predecessor response cannot overwrite the newer specimen or leave the previous Fe visible",
+    "A broken asset does not substitute Fe or a stale photo, and the next selection recovers",
+    "Specimen card and enlargement remain usable at 390x844",
+    "Usage requires no external request and produces no unexpected request or browser error"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "expectedAssetFailures": [
+    {
+      "url": "http://127.0.0.1:8084/assets/specimens/002-He.jpg",
+      "failure": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "location": {
+        "url": "http://127.0.0.1:8084/assets/specimens/002-He.jpg",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8084/assets/specimens/002-He.jpg",
+      "failure": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "location": {
+        "url": "http://127.0.0.1:8084/assets/specimens/002-He.jpg",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "visited": [
+    {
+      "number": 1,
+      "symbol": "H",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/001-H.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 2,
+      "symbol": "He",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/002-He.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 3,
+      "symbol": "Li",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/003-Li.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 4,
+      "symbol": "Be",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/004-Be.jpg",
+      "width": 840,
+      "height": 840
+    },
+    {
+      "number": 5,
+      "symbol": "B",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/005-B.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 6,
+      "symbol": "C",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/006-C.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 7,
+      "symbol": "N",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/007-N.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 8,
+      "symbol": "O",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/008-O.jpg",
+      "width": 960,
+      "height": 1200
+    },
+    {
+      "number": 9,
+      "symbol": "F",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/009-F.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "number": 10,
+      "symbol": "Ne",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/010-Ne.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 11,
+      "symbol": "Na",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/011-Na.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "number": 12,
+      "symbol": "Mg",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/012-Mg.jpg",
+      "width": 960,
+      "height": 575
+    },
+    {
+      "number": 13,
+      "symbol": "Al",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/013-Al.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 14,
+      "symbol": "Si",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/014-Si.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 15,
+      "symbol": "P",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/015-P.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 16,
+      "symbol": "S",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/016-S.jpg",
+      "width": 960,
+      "height": 694
+    },
+    {
+      "number": 17,
+      "symbol": "Cl",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/017-Cl.jpg",
+      "width": 960,
+      "height": 541
+    },
+    {
+      "number": 18,
+      "symbol": "Ar",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/018-Ar.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 19,
+      "symbol": "K",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/019-K.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "number": 20,
+      "symbol": "Ca",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/020-Ca.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 21,
+      "symbol": "Sc",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/021-Sc.jpg",
+      "width": 960,
+      "height": 1193
+    },
+    {
+      "number": 22,
+      "symbol": "Ti",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/022-Ti.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 23,
+      "symbol": "V",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/023-V.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 24,
+      "symbol": "Cr",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/024-Cr.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 25,
+      "symbol": "Mn",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/025-Mn.jpg",
+      "width": 500,
+      "height": 375
+    },
+    {
+      "number": 26,
+      "symbol": "Fe",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/026-Fe.jpg",
+      "width": 960,
+      "height": 598
+    },
+    {
+      "number": 27,
+      "symbol": "Co",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/027-Co.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 28,
+      "symbol": "Ni",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/028-Ni.jpg",
+      "width": 500,
+      "height": 527
+    },
+    {
+      "number": 29,
+      "symbol": "Cu",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/029-Cu.jpg",
+      "width": 960,
+      "height": 909
+    },
+    {
+      "number": 30,
+      "symbol": "Zn",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/030-Zn.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 31,
+      "symbol": "Ga",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/031-Ga.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 32,
+      "symbol": "Ge",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/032-Ge.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 33,
+      "symbol": "As",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/033-As.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 34,
+      "symbol": "Se",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/034-Se.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 35,
+      "symbol": "Br",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/035-Br.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 36,
+      "symbol": "Kr",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/036-Kr.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 37,
+      "symbol": "Rb",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/037-Rb.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "number": 38,
+      "symbol": "Sr",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/038-Sr.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 39,
+      "symbol": "Y",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/039-Y.jpg",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "number": 40,
+      "symbol": "Zr",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/040-Zr.jpg",
+      "width": 940,
+      "height": 940
+    },
+    {
+      "number": 41,
+      "symbol": "Nb",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/041-Nb.jpg",
+      "width": 960,
+      "height": 668
+    },
+    {
+      "number": 42,
+      "symbol": "Mo",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/042-Mo.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 43,
+      "symbol": "Tc",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/043-Tc.jpg",
+      "width": 960,
+      "height": 520
+    },
+    {
+      "number": 44,
+      "symbol": "Ru",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/044-Ru.jpg",
+      "width": 564,
+      "height": 564
+    },
+    {
+      "number": 45,
+      "symbol": "Rh",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/045-Rh.jpg",
+      "width": 330,
+      "height": 330
+    },
+    {
+      "number": 46,
+      "symbol": "Pd",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/046-Pd.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 47,
+      "symbol": "Ag",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/047-Ag.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 48,
+      "symbol": "Cd",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/048-Cd.jpg",
+      "width": 500,
+      "height": 658
+    },
+    {
+      "number": 49,
+      "symbol": "In",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/049-In.jpg",
+      "width": 960,
+      "height": 711
+    },
+    {
+      "number": 50,
+      "symbol": "Sn",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/050-Sn.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 51,
+      "symbol": "Sb",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/051-Sb.jpg",
+      "width": 540,
+      "height": 540
+    },
+    {
+      "number": 52,
+      "symbol": "Te",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/052-Te.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 53,
+      "symbol": "I",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/053-I.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "number": 54,
+      "symbol": "Xe",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/054-Xe.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 55,
+      "symbol": "Cs",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/055-Cs.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "number": 56,
+      "symbol": "Ba",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/056-Ba.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 57,
+      "symbol": "La",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/057-La.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 58,
+      "symbol": "Ce",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/058-Ce.jpg",
+      "width": 500,
+      "height": 358
+    },
+    {
+      "number": 59,
+      "symbol": "Pr",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/059-Pr.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 60,
+      "symbol": "Nd",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/060-Nd.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 61,
+      "symbol": "Pm",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/061-Pm.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 62,
+      "symbol": "Sm",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/062-Sm.jpg",
+      "width": 768,
+      "height": 640
+    },
+    {
+      "number": 63,
+      "symbol": "Eu",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/063-Eu.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 64,
+      "symbol": "Gd",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/064-Gd.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "number": 65,
+      "symbol": "Tb",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/065-Tb.jpg",
+      "width": 626,
+      "height": 493
+    },
+    {
+      "number": 66,
+      "symbol": "Dy",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/066-Dy.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 67,
+      "symbol": "Ho",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/067-Ho.jpg",
+      "width": 960,
+      "height": 763
+    },
+    {
+      "number": 68,
+      "symbol": "Er",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/068-Er.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 69,
+      "symbol": "Tm",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/069-Tm.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 70,
+      "symbol": "Yb",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/070-Yb.jpg",
+      "width": 617,
+      "height": 467
+    },
+    {
+      "number": 71,
+      "symbol": "Lu",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/071-Lu.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 72,
+      "symbol": "Hf",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/072-Hf.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 73,
+      "symbol": "Ta",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/073-Ta.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 74,
+      "symbol": "W",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/074-W.jpg",
+      "width": 400,
+      "height": 400
+    },
+    {
+      "number": 75,
+      "symbol": "Re",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/075-Re.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 76,
+      "symbol": "Os",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/076-Os.jpg",
+      "width": 330,
+      "height": 330
+    },
+    {
+      "number": 77,
+      "symbol": "Ir",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/077-Ir.jpg",
+      "width": 610,
+      "height": 528
+    },
+    {
+      "number": 78,
+      "symbol": "Pt",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/078-Pt.jpg",
+      "width": 960,
+      "height": 673
+    },
+    {
+      "number": 79,
+      "symbol": "Au",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/079-Au.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 80,
+      "symbol": "Hg",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/080-Hg.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 81,
+      "symbol": "Tl",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/081-Tl.jpg",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "number": 82,
+      "symbol": "Pb",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/082-Pb.jpg",
+      "width": 960,
+      "height": 819
+    },
+    {
+      "number": 83,
+      "symbol": "Bi",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/083-Bi.jpg",
+      "width": 960,
+      "height": 960
+    },
+    {
+      "number": 84,
+      "symbol": "Po",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/084-Po.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 85,
+      "symbol": "At",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/085-At.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 86,
+      "symbol": "Rn",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/086-Rn.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 87,
+      "symbol": "Fr",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/087-Fr.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 88,
+      "symbol": "Ra",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/088-Ra.jpg",
+      "width": 653,
+      "height": 522
+    },
+    {
+      "number": 89,
+      "symbol": "Ac",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/089-Ac.png",
+      "width": 960,
+      "height": 1200
+    },
+    {
+      "number": 90,
+      "symbol": "Th",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/090-Th.jpg",
+      "width": 500,
+      "height": 375
+    },
+    {
+      "number": 91,
+      "symbol": "Pa",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/091-Pa.jpg",
+      "width": 960,
+      "height": 763
+    },
+    {
+      "number": 92,
+      "symbol": "U",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/092-U.jpg",
+      "width": 960,
+      "height": 1420
+    },
+    {
+      "number": 93,
+      "symbol": "Np",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/093-Np.jpg",
+      "width": 250,
+      "height": 194
+    },
+    {
+      "number": 94,
+      "symbol": "Pu",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/094-Pu.jpg",
+      "width": 960,
+      "height": 913
+    },
+    {
+      "number": 95,
+      "symbol": "Am",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/095-Am.jpg",
+      "width": 960,
+      "height": 920
+    },
+    {
+      "number": 96,
+      "symbol": "Cm",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/096-Cm.jpg",
+      "width": 500,
+      "height": 467
+    },
+    {
+      "number": 97,
+      "symbol": "Bk",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/097-Bk.jpg",
+      "width": 500,
+      "height": 463
+    },
+    {
+      "number": 98,
+      "symbol": "Cf",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/098-Cf.jpg",
+      "width": 176,
+      "height": 158
+    },
+    {
+      "number": 99,
+      "symbol": "Es",
+      "kind": "photo",
+      "src": "http://127.0.0.1:8084/assets/specimens/099-Es.jpg",
+      "width": 330,
+      "height": 484
+    },
+    {
+      "number": 100,
+      "symbol": "Fm",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/100-Fm.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 101,
+      "symbol": "Md",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/101-Md.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 102,
+      "symbol": "No",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/102-No.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 103,
+      "symbol": "Lr",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/103-Lr.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 104,
+      "symbol": "Rf",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/104-Rf.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 105,
+      "symbol": "Db",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/105-Db.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 106,
+      "symbol": "Sg",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/106-Sg.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 107,
+      "symbol": "Bh",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/107-Bh.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 108,
+      "symbol": "Hs",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/108-Hs.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 109,
+      "symbol": "Mt",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/109-Mt.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 110,
+      "symbol": "Ds",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/110-Ds.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 111,
+      "symbol": "Rg",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/111-Rg.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 112,
+      "symbol": "Cn",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/112-Cn.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 113,
+      "symbol": "Nh",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/113-Nh.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 114,
+      "symbol": "Fl",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/114-Fl.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 115,
+      "symbol": "Mc",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/115-Mc.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 116,
+      "symbol": "Lv",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/116-Lv.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 117,
+      "symbol": "Ts",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/117-Ts.svg",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "number": 118,
+      "symbol": "Og",
+      "kind": "diagram",
+      "src": "http://127.0.0.1:8084/assets/specimens/118-Og.svg",
+      "width": 960,
+      "height": 600
+    }
+  ],
+  "manifestSha256": "f725ee779c45bf96a4950ba1b23e64f34be0343ab35476c616b26bc71a60d6d6",
+  "assetFailureState": {
+    "hidden": true,
+    "src": null,
+    "complete": true,
+    "naturalWidth": 0
+  },
+  "passed": 7,
+  "finishedAt": "2026-09-19T11:57:38.531Z"
+}
