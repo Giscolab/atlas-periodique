@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giscolab.github.io/atlas-periodique/sitemap.xml

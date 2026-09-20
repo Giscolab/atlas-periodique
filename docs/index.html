@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0d">
+  <meta name="color-scheme" content="dark">
+  <title>Atlas Périodique 3D — Explorer les 118 éléments</title>
+  <meta name="description" content="Atlas Périodique 3D transforme le tableau périodique en musée numérique interactif : 118 éléments, spécimens documentés, visite guidée et expérience Three.js.">
+  <meta name="author" content="Giscolab">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://giscolab.github.io/atlas-periodique/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="preload" as="image" href="./museum-final.png" fetchpriority="high">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Atlas Périodique 3D">
+  <meta property="og:title" content="Atlas Périodique 3D — La matière, élément par élément">
+  <meta property="og:description" content="Une expérience scientifique et visuelle en 3D pour explorer les 118 éléments chimiques.">
+  <meta property="og:url" content="https://giscolab.github.io/atlas-periodique/">
+  <meta property="og:image" content="https://giscolab.github.io/atlas-periodique/museum-final.png">
+  <meta property="og:image:alt" content="Vue du musée numérique Atlas Périodique 3D">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Atlas Périodique 3D">
+  <meta name="twitter:description" content="Explorer les 118 éléments chimiques dans un musée numérique interactif.">
+  <meta name="twitter:image" content="https://giscolab.github.io/atlas-periodique/museum-final.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..700&display=swap">
+  <link rel="stylesheet" href="./site.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":["SoftwareApplication","LearningResource"],
+    "name":"Atlas Périodique 3D",
+    "alternateName":"Atlas Périodique 3D — V4 Musée",
+    "description":"Expérience interactive en trois dimensions dédiée aux 118 éléments du tableau périodique.",
+    "url":"https://giscolab.github.io/atlas-periodique/",
+    "codeRepository":"https://github.com/Giscolab/atlas-periodique",
+    "applicationCategory":"EducationalApplication",
+    "operatingSystem":"Navigateur web moderne",
+    "inLanguage":"fr",
+    "isAccessibleForFree":true,
+    "author":{"@type":"Person","name":"Giscolab","url":"https://github.com/Giscolab"},
+    "learningResourceType":"Interactive resource",
+    "educationalUse":["Exploration","Référence","Apprentissage"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Atlas Périodique 3D — accueil">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-number">118</span><span class="brand-symbol">AP</span><span class="brand-mass">3D</span></span>
+        <span class="brand-copy"><strong>Atlas Périodique</strong><small>Musée numérique 3D</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span class="sr-only">Ouvrir le menu</span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#concept">Concept</a><a href="#experience">Expérience</a><a href="#elements">Éléments</a><a href="#science">Science</a><a href="#technique">Technique</a>
+        <a class="nav-github" href="https://github.com/Giscolab/atlas-periodique" target="_blank" rel="noreferrer">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"><img src="./museum-final.png" alt="" width="1920" height="1080" fetchpriority="high"></div>
+      <div class="hero-vignette" aria-hidden="true"></div><div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow reveal">ATLAS PÉRIODIQUE 3D · V4 MUSÉE</p>
+        <h1 id="hero-title" class="reveal">La matière.<br><span>Élément par élément.</span></h1>
+        <p class="hero-lead reveal">Une exploration interactive du tableau périodique pensée comme un musée numérique : 118 éléments, données scientifiques, spécimens documentés et mise en scène 3D en temps réel.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#experience">Découvrir l'expérience <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></a>
+          <a class="button button-ghost" href="https://github.com/Giscolab/atlas-periodique" target="_blank" rel="noreferrer">Voir le dépôt <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="hero-facts reveal" aria-label="Chiffres clés">
+          <div><strong data-count="118">118</strong><span>éléments</span></div>
+          <div><strong data-count="94">94</strong><span>photographies</span></div>
+          <div><strong data-count="24">24</strong><span>schémas</span></div>
+          <div><strong data-count="21">21</strong><span>animations 3D</span></div>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#concept" aria-label="Continuer vers le concept"><span>Explorer</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></a>
+    </section>
+
+    <section class="section section-intro" id="concept">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow">LE CONCEPT</p>
+          <h2>Un tableau périodique que l'on peut réellement explorer.</h2>
+          <p>Atlas Périodique 3D transforme une grille scientifique familière en espace de découverte. L'objectif n'est pas de remplacer les sources de référence, mais de rendre leur consultation plus visuelle, plus directe et plus mémorable.</p>
+        </div>
+        <div class="principles">
+          <article class="principle reveal"><span class="principle-index">01</span><h3>Voir</h3><p>Chaque élément dispose d'un visuel : photographie documentée lorsqu'elle est pertinente, sinon schéma explicitement identifié.</p></article>
+          <article class="principle reveal"><span class="principle-index">02</span><h3>Comprendre</h3><p>Les propriétés essentielles sont réunies dans une fiche claire, avec noms français, données atomiques et contexte de consultation.</p></article>
+          <article class="principle reveal"><span class="principle-index">03</span><h3>Explorer</h3><p>Recherche, filtres, sélection, zoom, rotation limitée, visite guidée et animations transforment la consultation en expérience active.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase" id="experience">
+      <div class="wrap">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">EXPÉRIENCE 3D</p>
+          <h2>Un musée numérique, rendu en temps réel.</h2>
+          <p>Le tableau reste le centre de l'expérience. Ses modules métalliques, ses reflets et ses surbrillances réagissent en direct, tandis que l'interface donne accès aux informations sans masquer l'objet scientifique.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span class="feature-icon" aria-hidden="true">⌖</span><h3>Navigation spatiale</h3><p>Rotation volontairement limitée, zoom, recentrage et cadrage calculé pour préserver la lisibilité globale du tableau.</p></article>
+          <article class="feature-card reveal"><span class="feature-icon" aria-hidden="true">⌕</span><h3>Recherche instantanée</h3><p>Recherche par nom français, symbole ou numéro atomique, avec ou sans accents.</p></article>
+          <article class="feature-card reveal"><span class="feature-icon" aria-hidden="true">◫</span><h3>Familles chimiques</h3><p>La légende permet de filtrer les familles tout en conservant le contexte visuel du tableau complet.</p></article>
+          <article class="feature-card reveal"><span class="feature-icon" aria-hidden="true">✦</span><h3>Animations natives</h3><p>Les 21 animations issues du modèle sont conservées et intégrées à l'expérience de présentation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-elements" id="elements">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow">118 FICHES</p>
+          <h2>Chaque élément devient un objet à observer.</h2>
+          <p>Les fiches associent propriétés, identification visuelle et provenance. Les photographies ne sont jamais présentées comme de simples illustrations : leurs conditions ou particularités sont précisées lorsqu'elles comptent.</p>
+        </div>
+        <div class="element-stage">
+          <figure class="element-main reveal">
+            <button class="media-button" type="button" data-lightbox="./specimen-Fe.png" aria-label="Agrandir la capture 16:9 de la fiche du fer">
+              <img src="./specimen-Fe.png" alt="Fiche du fer dans Atlas Périodique 3D avec photographie du spécimen" width="1920" height="1080" loading="lazy"><span class="expand-hint">Fer · Fe · 26</span>
+            </button>
+          </figure>
+          <div class="element-copy reveal">
+            <div class="periodic-card" aria-hidden="true"><span>26</span><strong>Fe</strong><small>Fer</small><em>55,845</em></div>
+            <h3>De la case à la matière.</h3>
+            <p>Un clic ouvre la fiche. Un double-clic rapproche la case. Le visuel du spécimen peut ensuite être agrandi pour lire sa description, son crédit et sa source.</p>
+            <ul class="clean-list"><li>Propriétés atomiques et physiques</li><li>Photographie ou schéma identifié</li><li>Source et crédit accessibles</li><li>Navigation synchronisée avec la sélection</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tour-section" id="visite">
+      <div class="wrap tour-layout">
+        <div class="tour-copy reveal">
+          <p class="eyebrow">VISITER LES 118</p><h2>De l'hydrogène à l'oganesson.</h2>
+          <p>La visite guidée parcourt les éléments dans l'ordre atomique. La case active avance légèrement, s'illumine et ouvre sa fiche, tandis que le tableau reste assemblé et entièrement cadré.</p>
+          <div class="tour-controls" aria-label="Fonctions de la visite"><span>Pause / Reprendre</span><span>Précédent / Suivant</span><span>Rapide · Normal · Lent</span></div>
+          <p class="fine-print">Toute interaction importante — sélection manuelle, filtre, caméra ou déploiement — respecte le contrôle de l'utilisateur et peut interrompre ou suspendre la visite.</p>
+        </div>
+        <figure class="tour-media reveal"><button class="media-button" type="button" data-lightbox="./tour-desktop.png" aria-label="Agrandir la capture 16:9 de la visite guidée"><img src="./tour-desktop.png" alt="Visite automatique des 118 éléments sur ordinateur" width="1920" height="1080" loading="lazy"><span class="expand-hint">Visite guidée</span></button></figure>
+      </div>
+    </section>
+
+    <section class="section science-section" id="science">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="eyebrow">SOURCES & TRANSPARENCE</p><h2>Le visuel n'efface pas la provenance.</h2><p>Le projet documente séparément les données, les spécimens, l'environnement graphique et les limites de validation. Les sources restent consultables dans le dépôt.</p></div>
+        <div class="source-grid">
+          <article class="source-card reveal"><span class="source-kicker">Données</span><h3>PubChem</h3><p>Les propriétés du tableau sont conservées localement à partir de la table périodique PubChem récupérée le 19 septembre 2026.</p><a href="https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON" target="_blank" rel="noreferrer">Consulter la source <span>↗</span></a></article>
+          <article class="source-card reveal"><span class="source-kicker">Spécimens</span><h3>118 visuels documentés</h3><p>94 photographies et 24 schémas. Les crédits, licences, descriptions et URLs sources sont répertoriés élément par élément.</p><a href="https://github.com/Giscolab/atlas-periodique/blob/master/docs/SPECIMENS.md" target="_blank" rel="noreferrer">Voir le registre <span>↗</span></a></article>
+          <article class="source-card reveal"><span class="source-kicker">Validation</span><h3>Preuves conservées</h3><p>Les contrôles, captures de référence et limites connues sont documentés afin de distinguer rendu, données et validation fonctionnelle.</p><a href="https://github.com/Giscolab/atlas-periodique/blob/master/docs/VALIDATION.md" target="_blank" rel="noreferrer">Lire la validation <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tech-section" id="technique">
+      <div class="wrap">
+        <div class="tech-layout">
+          <div class="section-heading reveal"><p class="eyebrow">SOUS LA SURFACE</p><h2>Une application web 3D autonome.</h2><p>Scripts, données, modèle et textures sont intégrés au projet. La consultation locale ne dépend pas d'un service applicatif externe.</p></div>
+          <div class="tech-stack reveal" aria-label="Technologies du projet"><span>Three.js r170</span><span>WebGL</span><span>JavaScript ES Modules</span><span>HTML5</span><span>CSS</span><span>GLB / glTF</span><span>Blender</span><span>JSON local</span></div>
+        </div>
+        <div class="architecture-grid">
+          <article class="architecture-card reveal"><span>01</span><h3>Modèle conservé</h3><p>Le GLB original est conservé à l'identique ; la présentation attache de nouvelles coques et de nouveaux textes aux racines animées.</p></article>
+          <article class="architecture-card reveal"><span>02</span><h3>118 racines</h3><p>Chaque élément reste adressable individuellement pour la sélection, la visite, l'éclairage et les transitions.</p></article>
+          <article class="architecture-card reveal"><span>03</span><h3>Assets locaux</h3><p>Données, images, textures et bibliothèque Three.js nécessaires à l'expérience sont fournis avec le projet.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section validation-section" id="validation">
+      <div class="wrap">
+        <div class="validation-panel reveal">
+          <div><p class="eyebrow">VÉRIFICATION</p><h2>Une expérience testée, pas seulement montrée.</h2></div>
+          <div class="validation-stats">
+            <div><strong data-count="26">26</strong><span>tests automatisés</span></div>
+            <div><strong data-count="17">17</strong><span>contrôles de visite</span></div>
+            <div><strong data-count="7">7</strong><span>contrôles visuels</span></div>
+            <div><strong data-count="118">118</strong><span>images parcourues</span></div>
+          </div>
+          <a class="text-link" href="https://github.com/Giscolab/atlas-periodique/blob/master/docs/VALIDATION.md" target="_blank" rel="noreferrer">Consulter le protocole et les limites <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="final-backdrop" aria-hidden="true"><img src="./tour-element-118.png" alt="" width="1920" height="1080" loading="lazy"></div>
+      <div class="wrap final-content reveal">
+        <p class="eyebrow">ATLAS PÉRIODIQUE 3D</p><h2>118 éléments.<br>Une seule carte pour les relier.</h2>
+        <p>Le dépôt public contient l'application, le modèle, les données locales, les sources documentaires, les captures de validation et l'historique du projet.</p>
+        <div class="hero-actions"><a class="button button-primary" href="https://github.com/Giscolab/atlas-periodique" target="_blank" rel="noreferrer">Ouvrir sur GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="button button-ghost" href="https://github.com/Giscolab/atlas-periodique/blob/master/README.md" target="_blank" rel="noreferrer">Lire la documentation</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand"><span class="brand-mark mini" aria-hidden="true"><span class="brand-number">118</span><span class="brand-symbol">AP</span><span class="brand-mass">3D</span></span><div><strong>Atlas Périodique 3D</strong><p>Projet de Giscolab · 2026</p></div></div>
+      <div class="footer-links"><a href="https://github.com/Giscolab/atlas-periodique" target="_blank" rel="noreferrer">Dépôt GitHub</a><a href="https://github.com/Giscolab/atlas-periodique/blob/master/docs/SPECIMENS.md" target="_blank" rel="noreferrer">Sources des visuels</a><a href="https://github.com/Giscolab/atlas-periodique/blob/master/docs/VALIDATION.md" target="_blank" rel="noreferrer">Validation</a><a href="#top">Haut de page ↑</a></div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Aperçu agrandi"><button class="lightbox-close" type="button" aria-label="Fermer l'aperçu">×</button><img id="lightboxImage" src="" alt=""></dialog>
+  <script src="./site.js" defer></script>
+</body>
+</html>

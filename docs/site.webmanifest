@@ -1,0 +1,11 @@
+{
+  "name": "Atlas Périodique 3D",
+  "short_name": "Atlas 3D",
+  "description": "Musée numérique interactif des 118 éléments chimiques.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080a0d",
+  "theme_color": "#080a0d",
+  "lang": "fr",
+  "icons": [{"src":"./favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}
